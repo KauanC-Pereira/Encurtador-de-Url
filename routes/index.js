@@ -65,6 +65,7 @@ const resultado = await Link.create({
 
   res.render('stats', resultado.dataValues);
 })
+console.log(res)
 
 router.delete('/:id/delete', async (req, res, next) => {
   const resultado = await Link.findByPk(req.params.id);
